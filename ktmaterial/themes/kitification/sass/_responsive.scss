@@ -1,0 +1,104 @@
+/* Bootstrap breakpoints */
+@include breakpoint($xs) {
+	.header-outer .ksm-menu-container .ksm-menu ul li a {
+		font-size: 9px;
+		padding: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.header-outer .ksm-menu-sub-menu_container .shrink-wrap-backdrop .shrink-wrap-findcenter .shrink-wrap-inner-highlight {
+		&.community { left: -25%; }
+		&.studio { left: -10%; }
+		&.collaboration { left: 5%; }
+		&.store { left: 20%; }
+		&.account { left: 45%; }
+	}
+}
+
+@include breakpoint($sm) {
+	.header-outer .ksm-menu-container .ksm-menu ul li a {
+		font-size: 11px;
+	}
+
+	.header-outer .ksm-menu-sub-menu_container .shrink-wrap-backdrop .shrink-wrap-findcenter .shrink-wrap-inner-highlight {
+		&.community { left: -20%; }
+		&.studio { left: -5%; }
+		&.collaboration { left: 10%; }
+		&.store { left: 25%; }
+		&.account { left: 50%; }
+	}
+}
+
+@include breakpoint($md) {
+	.posts .post .post_content_container_highlight .post_content_container .post_content .footer ul.post_stats li {
+		margin-right: 30px;
+	}
+
+	.page_footer .kit_footer_container .footer_links .kit_footer_section, .v2 .page_push .kit_footer_container .footer_links .kit_footer_section {
+		margin-left: 62px;
+	}
+
+	.header-outer .ksm-menu-sub-menu_container .shrink-wrap-backdrop .shrink-wrap-findcenter .shrink-wrap-inner-highlight {
+		&.community { left: -15%; }
+		&.studio { left: 0; }
+		&.collaboration { left: 15%; }
+		&.store { left: 35%; }
+		&.account { left: 55%; }
+	}
+}
+
+@include breakpoint($lg) {
+	.header-outer .ksm-menu-container .ksm-menu ul li a {
+		padding: 0 50px;
+		font-size: 12px;
+
+		&:before {
+			background-size: 100%;
+			margin-top: -13px;
+		}
+	}
+
+	.header-outer .ksm-menu-sub-menu_container .shrink-wrap-backdrop .shrink-wrap-findcenter .shrink-wrap-inner-highlight {
+		&.community { left: 0; }
+		&.studio { left: 15%; }
+		&.collaboration { left: 30%; }
+		&.store { left: 45%; }
+		&.account { left: 60%; }
+	}
+}
+
+@include breakpoint($xl) {
+	.header-outer .ksm-menu-container .ksm-menu ul li a {
+		font-size: 15px;
+	}
+}
+
+@include breakpoint($sm-only) {
+	.header-outer .ksm-menu-container .ksm-menu ul li a {
+		padding: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+}
+
+@include breakpoint($md-only) {
+	.header-outer .ksm-menu-container .ksm-menu ul li a {
+		font-size: 10px;
+		padding: 0 30%;
+
+		&:before {
+			background-size: 60%;
+			margin-top: -8px;
+		}
+	}
+
+	.header-outer .ksm-menu-container .ksm-menu ul li.collaboration a:before {
+		background-size: 55%;
+		margin-top: -10px;
+	}
+}
